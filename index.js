@@ -29,8 +29,8 @@ function getRecipeVals() {
       ingredients.push(ingredientNodes[i].value);
     }
   }
-  let name = document.getElementById('recipeName').value;
-  let description = document.getElementById('recipeDesc').value;
+  let name = document.getElementById('name').value;
+  let description = document.getElementById('description').value;
   let recipe = {name, ingredients, description};
   return(recipe);
 }
