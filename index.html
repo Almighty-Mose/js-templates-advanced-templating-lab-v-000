@@ -24,14 +24,17 @@
     </script>
     <script id="recipe-form-partial" type="text/x-handlebars-template">
       <form onsubmit="createRecipe();return false;">
-        Recipe Name: <input type="text" name="recipeName" value=><br>
-        Recipe Description: <input type="text" name="recipeDesc"><br>
+        Recipe Name: <input type="text" name="recipeName" value="{{name}}"><br>
+        Recipe Description: <input type="text" name="recipeDesc" value="{{description}}"><br>
         Ingredients: <br>
-        <input type="text" name="ingredient"><br>
-        <input type="text" name="ingredient"><br>
-        <input type="text" name="ingredient"><br>
-        <input type="text" name="ingredient"><br>
-        <input type="text" name="ingredient"><br>
+        {{#each ingredients}}
+        <input type="text" name="ingredients"><br>
+        {{else}}
+        <input type="text" name="ingredients"><br>
+        <input type="text" name="ingredients"><br>
+        <input type="text" name="ingredients"><br>
+        <input type="text" name="ingredients"><br>
+        <input type="text" name="ingredients"><br>
       </form>
     </script>
     <script id="recipe-template" type="text/x-handlebars-template">
