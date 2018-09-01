@@ -42,8 +42,13 @@
         <a href="#" onclick="displayEditForm();">Edit Recipe</a>
       </footer>
     </script>
-    <script id="recipe-details-partial>
-      
+    <script id="recipe-details-partial" type="text/x-handlebars-template">
+      <p id="recipeDescription">{{description}}</p>
+      <ul>
+        {{#each ingredients}}
+        {{ displayIngredient this }}
+        {{/each}}
+      </ul>
     </script>
   </body>
 </html>
