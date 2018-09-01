@@ -41,3 +41,7 @@ function updateRecipe() {
   let template = Handlebars.compile(recipeTemplate);
   document.getElementById("main").innerHTML = template(recipe);
 }
+
+function displayEditForm() {
+  let name = document.getElementById
+}
