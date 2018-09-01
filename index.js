@@ -43,5 +43,7 @@ function updateRecipe() {
 }
 
 function displayEditForm() {
-  let name = document.getElementById
+  let name = document.getElementById('name-header').value;
+  let description = document.getElementById('recipe-description').value;
+  let 
 }
