@@ -37,5 +37,7 @@ function getRecipeVals() {
 
 function updateRecipe() {
   let recipe = getRecipeVals();
-  let recipeTempa
+  let recipeTemplate = document.getElementById("recipe-template").innerHTML;
+  let template = Handlebars.compile(recipeTemplate);
+  document.getElementById("main").innerHTML = template(recipe);
 }
