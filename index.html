@@ -24,8 +24,8 @@
     </script>
     <script id="recipe-form-partial" type="text/x-handlebars-template">
       <form onsubmit="createRecipe();return false;">
-        Recipe Name: <input type="text" id="recipeName" value="{{name}}"><br>
-        Recipe Description: <input type="text" id="recipeDesc" value="{{description}}"><br>
+        Recipe Name: <input type="text" id="name" value="{{name}}"><br>
+        Recipe Description: <input type="text" id="description" value="{{description}}"><br>
         Ingredients: <br>
         {{#each ingredients}}
         <input type="text" name="ingredients" value="{{this}}"><br>
