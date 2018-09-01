@@ -20,3 +20,22 @@ function CreateRecipe() {
   let template = Handlebars.compile(recipeTemplate);
   document.getElementById('main').innerHTML = template(recipe);
 }
+
+function getRecipeVals() {
+  let ingredientNodes = document.getElementsByName("ingredients");
+  let ingredients = [];
+  for(let i = 0; i < ingredientNodes.length; i++) {
+    if(ingredientNodes[i].value !== "") {
+      ingredients.push(ingredientNodes[i].value);
+    }
+  }
+  let name = document.getElementById('recipeName').value;
+  let description = document.getElementById('recipeDesc').value;
+  let recipe = {name, ingredients, description};
+  return(recipe);
+}
+
+function updateRecipe() {
+  let recipe = getRecipeVals();
+  let recipeTempa
+}
